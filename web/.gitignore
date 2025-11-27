@@ -1,6 +1,2 @@
-node_modules
-backend/node_modules/
-frontend/web/node_modules/
-
-backend/.env
-frontend/web/.env
+node_modules/
+.env
