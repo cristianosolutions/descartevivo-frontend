@@ -34,7 +34,7 @@ function DashboardPage() {
       {
         label: '(Kg) por tipo de resíduo',
         data: summary.byType.map(t => t.total_kg),
-        backgroundColor: ["#FFA500", "#FFFF00", "#800000", "#3498db", "#FF0000", "#0f9748ff", "#e74c3c"]
+        backgroundColor: ["#FFA500", "#FFFF00", "#800000", "#3498db", "#FF0000", "#0f9748ff", "#e74c3c", "#2af10bff", "#e2154fff", "#171c1166"]
       }
     ]
   };
