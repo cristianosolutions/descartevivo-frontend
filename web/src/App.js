@@ -110,7 +110,7 @@ function AppContent() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-success text-center py-3 text-white opacity-75">
+        <footer className="bg-success text-center py-3 fw-bold text-white opacity-75">
           <small>DescarteVivo - ODS 11: Cidades e Comunidades Sustentáveis</small>
         </footer>
       </div>
