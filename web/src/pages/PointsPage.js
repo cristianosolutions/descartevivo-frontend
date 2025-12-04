@@ -148,6 +148,13 @@ function PointsPage() {
         </div>
       </div>
 
+      <button
+        className="btn btn-primary mb-3"
+        onClick={() => window.open("http://localhost:3001/api/reports/points")}
+      >
+        Exportar PDF
+      </button>
+
       <h5 className="mb-3">Pontos cadastrados</h5>
       <div className="row">
         {points.map((p) => (
