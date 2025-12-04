@@ -24,7 +24,7 @@ function DeliveriesPage() {
 
     api.get('/api/points')
       .then(res => setPoints(res.data))
-      .catch(err => console.error('Erro ao carregar pontos', err));
+      .catch(err => console.error('Erro ao carregar pontos de coletas', err));
 
     api.get('/api/waste-types')
       .then(res => setWasteTypes(res.data))

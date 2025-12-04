@@ -19,8 +19,8 @@ function PointsPage() {
     api.get('/api/points')
       .then(res => setPoints(res.data))
       .catch(err => {
-        console.error('Erro ao carregar pontos', err);
-        alert('Erro ao carregar pontos. Veja o console.');
+        console.error('Erro ao carregar pontos de coletas', err);
+        alert('Erro ao carregar pontos de coletas. Veja o console.');
       });
   };
 
@@ -36,13 +36,13 @@ function PointsPage() {
     e.preventDefault();
     api.post('/api/points', form)
       .then(() => {
-        alert('Ponto cadastrado com sucesso!');
+        alert('Ponto de coleta cadastrado com sucesso!');
         setForm({ name: '', address: '', city: '', state: '', neighborhood: '' });
         loadPoints();
       })
       .catch(err => {
-        console.error('Erro ao cadastrar ponto', err);
-        alert('Erro ao cadastrar ponto. Veja o console.');
+        console.error('Erro ao cadastrar ponto de coletas', err);
+        alert('Erro ao cadastrar ponto de coletas. Veja o console.');
       });
   };
 
@@ -63,12 +63,12 @@ function PointsPage() {
 
     api.put(`/api/points/${editPoint.id}`, editPoint)
       .then(() => {
-        alert("Ponto atualizado com sucesso!");
+        alert("Ponto de coleta atualizado com sucesso!");
         closeModal();
         loadPoints();
       })
       .catch(err => {
-        alert("Erro ao atualizar ponto");
+        alert("Erro ao atualizar ponto de coleta");
         console.error(err);
       });
   };
